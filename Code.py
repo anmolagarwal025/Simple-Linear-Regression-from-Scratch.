@@ -41,11 +41,6 @@ class meraLR:
     def predict(self,X2_test):
         return self.m*X2_test + self.b
     
-    def coefficent(self):
-        return print(self.m)
-    
-    def intercept(self):
-        return print(self.b)
 
 # Creating object.
 lre = meraLR() 
@@ -57,10 +52,10 @@ lre.fit(X2_train,y2_train)
 y_pr = lre.predict(X2_test)
 
 # Checking value of slope (m) model predicted..
-lre.coefficent
+lre.m
 
 # Checking value of intercept (b) model predicted..
-lre.intercept
+lre.b
 
 
 
